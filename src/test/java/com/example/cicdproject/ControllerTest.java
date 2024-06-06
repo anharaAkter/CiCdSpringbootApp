@@ -21,6 +21,6 @@ public class ControllerTest {
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/hello"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.content().string("Hello, World!"));
+                .andExpect(MockMvcResultMatchers.content().string("Hello, World test zenkins!"));
     }
 }
